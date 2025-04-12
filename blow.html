@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Blow the Candles 🎂</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/blow.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+    
+  </head>
+  <body>
+    <div class="candle-count-display">
+      🎂 Candles Remaining: <span id="candleCount">0</span>
+    </div>
+
+    <div class="cake-wrapper">
+      <h1 class="instruction" id="instruction">Place the candles on the cake first 🎂</h1>
+
+      <div class="cake">
+        <div class="plate"></div>
+        <div class="layer layer-bottom"></div>
+        <div class="layer layer-middle"></div>
+        <div class="layer layer-top"></div>
+        <div class="icing"></div>
+        <div class="drip drip1"></div>
+        <div class="drip drip2"></div>
+        <div class="drip drip3"></div>
+
+        <div class="candles" id="candles" style="display:none">
+          <div class="candle">
+            <div class="flame"></div>
+          </div>
+          <div class="candle">
+            <div class="flame"></div>
+          </div>
+          <div class="candle">
+            <div class="flame"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="countdown" id="countdown" style="display:none">3</div>
+      <p class="wish" id="wish" style="display:none">✨ Make a wish... ✨</p>
+    </div>
+
+    <canvas id="confettiCanvas" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; pointer-events:none;"></canvas>
+
+    <script src="script/blow.js"></script>
+  </body>
+</html>
